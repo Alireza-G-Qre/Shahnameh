@@ -22,7 +22,8 @@ class TransformerEmbedding:
         }
         self.models = {
             'bigbird': BigBirdModel.from_pretrained(self.model_names['bigbird'], attention_type='original_full'),
-            'parsbert': AutoModel.from_pretrained(self.model_names['parsbert'], config=AutoConfig.from_pretrained(self.model_names['parsbert']))
+            'parsbert': AutoModel.from_pretrained(
+                self.model_names['parsbert'], config=AutoConfig.from_pretrained(self.model_names['parsbert']))
         }
 
     def get_transformer_embedding(self, documents, model_name):
