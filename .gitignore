@@ -1,3 +1,9 @@
 .idea
-**/*.npz
+models/*.npz
 **/__*
+
+.DS_Store
+
+*.zip
+
+*.npz
