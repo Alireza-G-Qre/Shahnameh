@@ -1,6 +1,7 @@
 .idea
 models/*.npz
 **/__*
+**/.ipynb_checkpoints/*
 
 .DS_Store
 
